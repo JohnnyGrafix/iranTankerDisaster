@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clickable image</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="vendor/afp/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./vendor/normalize/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./vendor/afp/global.css" />
+    <link rel="stylesheet" href="https://unpkg.com/vue-twentytwenty/dist/vue-twentytwenty.css" />
+
+    <!-- Your styles here -->
+    <link rel="stylesheet" type="text/css" href="./app.css" />
+</head>
+
+<body>
+    <!-- The main app -->
+    <div id="app">
+      <div class="loader" v-if="!loaded">
+
+      </div>
+      <div class="loaded" v-else>
+            <header>
+                <h1>{{ story.title }}</h1>
+                <h2>{{ story.description }}</h2>
+            </header>
+            <main>
+                <div class="zoom" id="zoomback">
+				<h3>{{ story.locatorTitle }}</h3>
+				<div class="clickable-image">
+                    <img :src="'assets/'+story.overview">
+                    <p class="small">{{ story.overviewLegend }}</p>
+					<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 620 409">
+                        <g transform="translate(325,320)" v-on:click="moveTo('map')">
+                            <rect x="0" y="0" width="69" height="73"></rect>
+                            <text x="30" y="40">Collision</text>
+                        </g>
+                    </svg>
+                </div>
+				</div>
+                
+                <div class="zooms">
+                        <div class="clickable-image">
+                        <svg preserveAspectRatio="xMaxYMid" viewBox="0 0 620 409">
+                        <g transform="translate(325,320)" v-on:click="moveTo('back')">
+                            <rect x="0" y="0" width="69" height="73"></rect>
+                            <text x="30" y="40">back</text>
+                        </g>
+                    </svg>
+                </div>        
+				  <div class="zoom" id="zoommap">
+				        <h3>{{ story.locatorTitle }}</h3>
+                        <img :src="'assets/'+story.locator">
+                        <p class="small">{{ story.locatorLegend }}</p>
+                   </div>
+					
+					<div v-for="zoom,i in story.zooms" class="zoom" :id="'zoom'+i">
+                        <h3>{{ zoom.title}}</h3>
+                        <div>
+                           <img :src="'assets/'+zoom.before">
+
+						    <!--<TwentyTwenty
+                            offset="0.7"
+                            :before="'assets/'+zoom.before"
+                            :before-label="story.beforeLabel"
+                            :after="'assets/'+zoom.after"
+                            :after-label="story.afterLabel"></TwentyTwenty> -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+    		<p style="margin: 0;">{{ story.sources }}</P>
+            <footer>
+                <credits :lang="story.lang" :lastupdate="story.lastUpdate" :sources="story.sources"></credits>
+                <logo></logo>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Vendor scripts -->
+    <script src="https://graphics.afpforum.com/vendors/pym/pym.v1.min.js"></script>
+    <script src="./vendor/vue/vue.min.js"></script>
+    <script src="./vendor/vue/httpVueLoader.js"></script>
+    <script src="./vendor/vue/vue-resource.min.js"></script>
+    <script src="./vendor/vue/vue-router.js"></script>
+    <script src="./vendor/archieml/archieml.js"></script>
+    <script src="https://unpkg.com/vue-twentytwenty/dist/vue-twentytwenty.js"></script>
+
+    <!-- Your script here -->
+    <script src="app.min.js"></script>
+</body>
+
+</html>

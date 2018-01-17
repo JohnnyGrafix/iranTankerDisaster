@@ -1,0 +1,34 @@
+title : East China sea shipping disaster
+description: Collision January 6 leads to biggest known oil condensate spill
+
+overview: tanker_1-01.svg
+overviewLegend: Iranian oil tanker Sanchi collided with a Hong Kong-registered cargo ship on January 6. 
+
+locator: tanker_2-01.svg
+locatorTitle: Location map
+locatorLegend: The accident took place 296km east of Shanghai.
+mapLabel: Map 2
+
+[zooms]
+before: tanker_3-01.png
+after: place_1-after.png
+title: Area 1
+
+before: tanker_4-01.png
+after: place_2-after.png
+title: Area 2
+
+before: tanker_5-01.png
+after: place_3-after.png
+title: Area 3
+
+[]
+
+beforeLabel: Before
+afterLabel: After
+
+sources : Sources: DigitalGlobe, HRW
+
+lastUpdate.key: Last update:
+lastUpdate.value: Sep 21 2017 12:51:52
+lang: en

@@ -1,0 +1,34 @@
+title : Village incendié en Birmanie
+description: Depuis le 25 août, plus de 400 000 musulmans Rohingyas ont fui la Birmanie pour le Bangladesh
+
+overview: mainpic.png
+overviewLegend: Le village Myar Zin (Birmanie) le 16 septembre 2017. Cliquez pour zoomer et comparer avec une image du 21 janvier.
+
+locator: locator.png
+locatorTitle: Localisation
+locatorLegend: Les points rouges représentent les villages incendiés depuis le 25 août.
+mapLabel: Carte
+
+[zooms]
+before: place_1-before.png
+after: place_1-after.png
+title: Zone 1
+
+before: place_2-before.png
+after: place_2-after.png
+title: Zone 2
+
+before: place_3-before.png
+after: place_3-after.png
+title: Zone 3
+
+[]
+
+beforeLabel: Avant
+afterLabel: Après
+
+sources : Sources : DigitalGlobe, HRW
+
+lastUpdate.key: Dernière mise à jour:
+lastUpdate.value: 21 septembre 2017 12:51:52
+lang: fr
