@@ -13,16 +13,16 @@ threeLegend: The accident took place 296km east of Shanghai
 
 four: tanker_3-01.png
 fourTitle: Location map
-fourLegend: It were fucking massive like
+fourLegend: xxx
 
 five: tanker_4-01.png
 fiveTitle: Location map
-fiveLegend: And full of shite
+fiveLegend: xxxx
 
 six: tanker_5-01.png
 sixTitle: Location map
-sixLegend: Massive dister
-sixLegend2: Fucking sick of it
+sixLegend: xx
+sixLegend2: xxxx
 
 sources : Sources: DigitalGlobe, HRW
 
