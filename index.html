@@ -21,54 +21,127 @@
 
       </div>
       <div class="loaded" v-else>
-            <header>
-                <h1>{{ story.title }}</h1>
-                <h2>{{ story.description }}</h2>
-            </header>
+            
             <main>
+			
+			<!--first page-->
+			    
+				<div class="zoom" id="zoomfirst">
+				<h1>{{ story.title }}</h1>
+				<h3>{{ story.locatorTitle }}</h3>
+				<div class="clickable-image">
+                    <img :src="'assets/'+story.first">
+                    <p class="small">{{ story.firstLegend }}</p>
+					<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 620 409">
+                        <g transform="translate(545,320)" v-on:click="moveTo('back')">
+                            <rect x="0" y="0" width="69" height="73"></rect>
+                            <text x="30" y="40">next</text>
+                        </g>
+                    </svg>
+                </div>
+				</div>
+				<!--second page-->
                 <div class="zoom" id="zoomback">
+				<h1>{{ story.title }}</h1>
 				<h3>{{ story.locatorTitle }}</h3>
 				<div class="clickable-image">
                     <img :src="'assets/'+story.overview">
                     <p class="small">{{ story.overviewLegend }}</p>
 					<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 620 409">
-                        <g transform="translate(325,320)" v-on:click="moveTo('map')">
+                        <g transform="translate(545,320)" v-on:click="moveTo('three')">
                             <rect x="0" y="0" width="69" height="73"></rect>
-                            <text x="30" y="40">Collision</text>
+                            <text x="30" y="40">Next</text>
+                        </g>
+						<g transform="translate(5,320)" v-on:click="moveTo('first')">
+                            <rect x="0" y="0" width="69" height="73"></rect>
+                            <text x="30" y="40">Back</text>
                         </g>
                     </svg>
                 </div>
 				</div>
-                
-                <div class="zooms">
+				
+                <!--third page-->
+                <div class="zoom" id="zoomthree">
+				<h1>{{ story.title }}</h1>
                         <div class="clickable-image">
+						<img :src="'assets/'+story.three">
+                    <p class="small">{{ story.threeLegend }}</p>
                         <svg preserveAspectRatio="xMaxYMid" viewBox="0 0 620 409">
-                        <g transform="translate(325,320)" v-on:click="moveTo('back')">
+                        <g transform="translate(545,320)" v-on:click="moveTo('four')">
                             <rect x="0" y="0" width="69" height="73"></rect>
-                            <text x="30" y="40">back</text>
+                            <text x="30" y="40">next</text>
+                        </g>
+						<g transform="translate(5,320)" v-on:click="moveTo('back')">
+                            <rect x="0" y="0" width="69" height="73"></rect>
+                            <text x="30" y="40">Back</text>
                         </g>
                     </svg>
-                </div>        
-				  <div class="zoom" id="zoommap">
-				        <h3>{{ story.locatorTitle }}</h3>
-                        <img :src="'assets/'+story.locator">
-                        <p class="small">{{ story.locatorLegend }}</p>
-                   </div>
-					
-					<div v-for="zoom,i in story.zooms" class="zoom" :id="'zoom'+i">
-                        <h3>{{ zoom.title}}</h3>
-                        <div>
-                           <img :src="'assets/'+zoom.before">
-
-						    <!--<TwentyTwenty
-                            offset="0.7"
-                            :before="'assets/'+zoom.before"
-                            :before-label="story.beforeLabel"
-                            :after="'assets/'+zoom.after"
-                            :after-label="story.afterLabel"></TwentyTwenty> -->
-                        </div>
-                    </div>
                 </div>
+			</div>
+				
+
+                <!--fourth page-->
+                <div class="zoom" id="zoomfour">
+				<h1>{{ story.title }}</h1>
+                        <div class="clickable-image">
+                        <img :src="'assets/'+story.four">
+                    <p class="small">{{ story.fourLegend }}</p>
+						<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 620 409">
+                        <g transform="translate(545,320)" v-on:click="moveTo('five')">
+                            <rect x="0" y="0" width="69" height="73"></rect>
+                            <text x="30" y="40">next</text>
+                        </g>
+						<g transform="translate(5,320)" v-on:click="moveTo('three')">
+                            <rect x="0" y="0" width="69" height="73"></rect>
+                            <text x="30" y="40">Back</text>
+                        </g>
+                    </svg>
+                </div>
+			    </div>	
+			  
+			  <!--fifth page-->
+                <div class="zoom" id="zoomfive">
+				<h1>{{ story.title }}</h1>
+                        <div class="clickable-image">
+                        <img :src="'assets/'+story.five">
+                    <p class="small">{{ story.fiveLegend }}</p>
+						<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 620 409">
+                        <g transform="translate(545,320)" v-on:click="moveTo('six')">
+                            <rect x="0" y="0" width="69" height="73"></rect>
+                            <text x="30" y="40">next</text>
+                        </g>
+						<g transform="translate(5,320)" v-on:click="moveTo('four')">
+                            <rect x="0" y="0" width="69" height="73"></rect>
+                            <text x="30" y="40">Back</text>
+                        </g>
+                    </svg>
+                </div>
+			    </div>
+			  
+			  <!--sixth page-->
+                <div class="zoom" id="zoomsix">
+				<h1>{{ story.title }}</h1>
+                        <div class="clickable-image">
+                        <img :src="'assets/'+story.six">
+                    <p class="small">{{ story.sixLegend }}</p>
+					<p class="small">{{ story.sixLegend2 }}</p>
+						<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 620 409">
+                        <g transform="translate(545,320)" v-on:click="moveTo('seven')">
+                            <rect x="0" y="0" width="69" height="73"></rect>
+                            <text x="30" y="40">next</text>
+                        </g>
+						<g transform="translate(5,320)" v-on:click="moveTo('five')">
+                            <rect x="0" y="0" width="69" height="73"></rect>
+                            <text x="30" y="40">Back</text>
+                        </g>
+                    </svg>
+                </div>
+			    </div>
+			  
+			  
+			  
+			  
+			  </div>
             </main>
     		<p style="margin: 0;">{{ story.sources }}</P>
             <footer>

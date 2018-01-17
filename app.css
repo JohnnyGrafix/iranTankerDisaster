@@ -1,5 +1,8 @@
+#app {
+	width: 300px;
+}
 main {
-	width: 100%;
+	width: 300px;
 }
 main img {
 	width: 100%;
@@ -15,6 +18,7 @@ section#credits {
 }
 .zoom {
 	width: 100%;
+	height: 500px;
 	margin-top: 25px;
 	margin-bottom: 200px;
 	border: 1px solid red;
@@ -33,9 +37,9 @@ section#credits {
 	cursor: pointer;
 }
 .clickable-image svg rect {
-	stroke: red;
+	stroke: #942C61;
 	stroke-width: 4px;
-	fill: red;
+	fill: #942C61;
 	fill-opacity: 0.7;
 	transition: fill-opacity 0.5s;
 }

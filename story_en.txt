@@ -1,31 +1,27 @@
 title : East China sea shipping disaster
-description: Collision January 6 leads to biggest known oil condensate spill
+
+first: smoke-01.png
+firstLegend: Collision January 6 leads to biggest known oil condensate spill
 
 overview: tanker_1-01.svg
 overviewLegend: Iranian oil tanker Sanchi collided with a Hong Kong-registered cargo ship on January 6. 
 
-locator: tanker_2-01.svg
-locatorTitle: Location map
-locatorLegend: The accident took place 296km east of Shanghai.
-mapLabel: Map 2
+three: tanker_2-01.svg
+threeTitle: Location map
+threeLegend: The accident took place 296km east of Shanghai
 
-[zooms]
-before: tanker_3-01.png
-after: place_1-after.png
-title: Area 1
+four: tanker_3-01.png
+fourTitle: Location map
+fourLegend: It were fucking massive like
 
-before: tanker_4-01.png
-after: place_2-after.png
-title: Area 2
+five: tanker_4-01.png
+fiveTitle: Location map
+fiveLegend: And full of shite
 
-before: tanker_5-01.png
-after: place_3-after.png
-title: Area 3
-
-[]
-
-beforeLabel: Before
-afterLabel: After
+six: tanker_5-01.png
+sixTitle: Location map
+sixLegend: Massive dister
+sixLegend2: Fucking sick of it
 
 sources : Sources: DigitalGlobe, HRW
 
