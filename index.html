@@ -28,10 +28,10 @@
 			    
 				<div class="zoom" id="zoomfirst">
 				<h1>{{ story.title }}</h1>
-				<h3>{{ story.locatorTitle }}</h3>
+				<h3>{{ story.firstTitle }}</h3>
 				<div class="clickable-image">
                     <img :src="'assets/'+story.first">
-                    <p class="small">{{ story.firstLegend }}</p>
+                    <p class="explain" id="firstExplain">{{ story.firstLegend }}</p>
 					<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 620 409">
                         <g transform="translate(545,320)" v-on:click="moveTo('back')">
                             <rect x="0" y="0" width="69" height="73"></rect>
@@ -43,10 +43,10 @@
 				<!--second page-->
                 <div class="zoom" id="zoomback">
 				<h1>{{ story.title }}</h1>
-				<h3>{{ story.locatorTitle }}</h3>
+				<h3>{{ story.overviewTitle }}</h3>
 				<div class="clickable-image">
                     <img :src="'assets/'+story.overview">
-                    <p class="small">{{ story.overviewLegend }}</p>
+                    <p class="explain">{{ story.overviewLegend }}</p>
 					<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 620 409">
                         <g transform="translate(545,320)" v-on:click="moveTo('three')">
                             <rect x="0" y="0" width="69" height="73"></rect>
@@ -65,7 +65,7 @@
 				<h1>{{ story.title }}</h1>
                         <div class="clickable-image">
 						<img :src="'assets/'+story.three">
-                    <p class="small">{{ story.threeLegend }}</p>
+                    <p class="explain">{{ story.threeLegend }}</p>
                         <svg preserveAspectRatio="xMaxYMid" viewBox="0 0 620 409">
                         <g transform="translate(545,320)" v-on:click="moveTo('four')">
                             <rect x="0" y="0" width="69" height="73"></rect>

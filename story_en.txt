@@ -1,10 +1,11 @@
 title : East China sea shipping disaster
 
 first: smoke-01.png
-firstLegend: Collision January 6 leads to biggest known oil condensate spill
+firstTitle: Collision January 6 
+firstLegend: leads to biggest known oil condensate spill
 
 overview: tanker_1-01.svg
-overviewLegend: Iranian oil tanker Sanchi collided with a Hong Kong-registered cargo ship on January 6. 
+overviewLegend: Iranian oil tanker Sanchi collided with a Hong Kong-registered cargo ship
 
 three: tanker_2-01.svg
 threeTitle: Location map
