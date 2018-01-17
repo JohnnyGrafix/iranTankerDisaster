@@ -1,8 +1,8 @@
 #app {
-	width: 300px;
+	max-width: 350px;
 }
 main {
-	width: 300px;
+	width: 100%;
 }
 main img {
 	width: 100%;
