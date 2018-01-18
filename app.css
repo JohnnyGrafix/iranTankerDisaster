@@ -22,6 +22,16 @@ section#credits {
 	border: 1px solid red;
 }
 
+.cls-1{
+	fill:#a7a9ac;
+	stroke:#bdb4ab;
+	stroke-width:0.3px;
+	}
+.cls-2{fill:#e98b70;}
+.cls-3{fill:#49479d;}
+.forward {
+	fill: red;
+}
 .clickable-image {
 	position: relative;
 }
