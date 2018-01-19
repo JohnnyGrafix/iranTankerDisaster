@@ -85,7 +85,7 @@
 				<h3>{{ story.fourTitle }}</h3>
                         <div class="clickable-image">
                         <img :src="'assets/'+story.four">
-                    <p class="explain" id="fourExplain">{{ story.fourLegend }}</p>
+                    <p class="legend1" id="fourExplain">{{ story.fourLegend }}</p>
 					<p class="explain" id="fourExplain2">{{ story.fourLegend2 }}</p>
 						<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 610 420">
                         <g transform="translate(560,320)" v-on:click="moveTo('five')">
@@ -104,7 +104,7 @@
 				<h3>{{ story.fiveTitle }}</h3>
                         <div class="clickable-image">
                         <img :src="'assets/'+story.five">
-                    <p class="explain" id="fiveExplain">{{ story.fiveLegend }}</p>
+                    <p class="legend1" id="fiveExplain">{{ story.fiveLegend }}</p>
 					<p class="explain" id="fiveExplain2">{{ story.fiveLegend2 }}</p>
 						<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 610 420">
                         <g transform="translate(560,320)" v-on:click="moveTo('six')">
@@ -123,10 +123,10 @@
 				<h3>{{ story.sixTitle }}</h3>
                         <div class="clickable-image">
                         <img :src="'assets/'+story.six">
-                    <p class="explain" id="sixExplain">{{ story.sixLegend }}</p>
+                    <p class="legend1" id="sixExplain">{{ story.sixLegend }}</p>
 					<p class="explain" id="sixExplain2">{{ story.sixLegend2 }}</p>
 						<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 610 420">
-                        <g class="lastforward" transform="translate(560,320)" v-on:click="moveTo('seven')">
+                        <g transform="translate(560,320)" v-on:click="moveTo('seven')">
                         <circle class="cls-2" cx="13.12" cy="13.12" r="35"/><polyline class="cls-3" points="4.02 -5.62 30.52 13.12 4.02 30.61"/>   
                         </g>
 						<g transform="translate(25,320)" v-on:click="moveTo('five')">
@@ -136,12 +136,28 @@
                 </div>
 			    </div>
 			  
-			  
-			  
+			  <!--seventh page-->
+                <div class="zoom" id="zoomseven">
+				<h1>{{ story.title }}</h1>
+				<h3>{{ story.sevenTitle }}</h3>
+                        <div class="clickable-image">
+                        <img :src="'assets/'+story.seven">
+                    <p class="legend1" id="sevenExplain">{{ story.sevenLegend }}</p>
+					<p class="explain" id="sixExplain2">{{ story.sevenLegend2 }}</p>
+						<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 610 420">
+                        <g class="lastforward" transform="translate(560,320)" v-on:click="moveTo('seven')">
+                        <circle class="cls-2" cx="13.12" cy="13.12" r="35"/><polyline class="cls-3" points="4.02 -5.62 30.52 13.12 4.02 30.61"/>   
+                        </g>
+						<g transform="translate(25,320)" v-on:click="moveTo('six')">
+                        <circle class="cls-2" cx="13.12" cy="13.12" r="35"/><polyline class="cls-3" points="30.02 -5.62 0.52 13.12 30.02 30.61"/>   
+                        </g>
+                    </svg>
+                </div>
+			    </div>
 			  
 			  </div>
             </main>
-    		<p style="margin: 0;">{{ story.sources }}</P>
+    		<p style="margin: 0;"><i>{{ story.sources }}</i></P>
             <footer>
                 <credits :lang="story.lang" :lastupdate="story.lastUpdate" :sources="story.sources"></credits>
                 <logo></logo>

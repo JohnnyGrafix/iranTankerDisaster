@@ -23,15 +23,21 @@ fourLegend2: It was carrying 136,000 tonnes of oil condensate
 five: tanker_4-01.png
 fiveTitle: Oil condensate
 fiveLegend: Condensate is a high-quality light oil used as a base for petrol, diesel and aviation fuels
-fiveLegend2: An unknown volume of condenstate is believed to have spilled into the sea
+fiveLegend2: An unknown volume of condenstate spilled into the sea
 
 six: tanker_5-01.png
-sixTitle: Massive pollution
+sixTitle: Toxic spill
 sixLegend: The type of condensate oil carried by the Sanchi does not form a traditional surface slick when spilt
 sixLegend2: It is highly toxic to marine life and very difficult to separate from water
 
-sources : Sources: DigitalGlobe, HRW
+seven: slick-01.png
+sevenTitle: Massive slick
+sevenLegend: The State Oceanic Administration of China said late Wednesday that it was monitoring four slicks with a total area of almost 101 square kilometres
+sevenLegend2: The bodies of only three out of 30 Iranian and two Bangladeshi crew members have been found
+
+
+sources : Sources: China State Oceanic Administration/Transport ministry of China
 
 lastUpdate.key: Last update:
-lastUpdate.value: Sep 21 2017 12:51:52
+lastUpdate.value: Jan 19 2018 07:00:00GMT
 lang: en
