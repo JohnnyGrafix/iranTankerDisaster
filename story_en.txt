@@ -6,24 +6,29 @@ forward: forward.svg
 firstLegend: leads to biggest known oil condensate spill
 
 overview: tanker_1-01.svg
+overviewTitle: Collision January 6
 overviewLegend: Iranian oil tanker Sanchi collided with a Hong Kong-registered cargo ship
 
 three: tanker_2-01.svg
+overviewTitle: Collision January 6
 threeTitle: Location map
 threeLegend: The accident took place 296km east of Shanghai
+threeLegend2: The crew of the cargo ship escaped unhurt. The 32 crew members of the tanker went missing.
 
 four: tanker_3-01.png
-fourTitle: Location map
-fourLegend: xxx
+fourTitle: Blazing tanker
+fourLegend: The Sanchai burst into flames and burned for eight days before sinking
+fourLegend2: It was carrying 136,000 tonnes of oil condensate
 
 five: tanker_4-01.png
-fiveTitle: Location map
-fiveLegend: xxxx
+fiveTitle: Oil condensate
+fiveLegend: Condensate is a high-quality light oil used as a base for petrol, diesel and aviation fuels
+fiveLegend2: An unknown volume of condenstate is believed to have spilled into the sea
 
 six: tanker_5-01.png
-sixTitle: Location map
-sixLegend: xx
-sixLegend2: xxxx
+sixTitle: Massive pollution
+sixLegend: The type of condensate oil carried by the Sanchi does not form a traditional surface slick when spilt
+sixLegend2: It is highly toxic to marine life and very difficult to separate from water
 
 sources : Sources: DigitalGlobe, HRW
 
