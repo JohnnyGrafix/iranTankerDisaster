@@ -3,7 +3,7 @@ title : East China sea shipping disaster
 first: smoke-01.png
 firstTitle: Collision January 6
 forward: forward.svg 
-firstLegend: leads to biggest known oil condensate spill
+firstLegend: Leads to biggest known oil condensate spill
 
 overview: tanker_1-01.svg
 overviewTitle: Collision January 6
