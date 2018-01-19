@@ -8,6 +8,8 @@ firstLegend: Leads to biggest known oil condensate spill
 overview: tanker_1-01.svg
 overviewTitle: Collision January 6
 overviewLegend: Iranian oil tanker Sanchi collided with a Hong Kong-registered cargo ship
+overviewLegend2: The accident took place 296km east of Shanghai
+overviewLegend3: The crew of the cargo ship escaped unhurt. The 32 crew members of the tanker went missing
 
 three: tanker_2-01.svg
 overviewTitle: Collision January 6

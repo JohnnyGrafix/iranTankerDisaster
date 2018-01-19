@@ -97,13 +97,85 @@ footer {
 	fill: white;
 	fill-opacity: 0.4;
 }
-.clickable-image svg text {
-	font-size: 25px;
-	alignment-baseline: central;
-	fill: white;
-	text-anchor: middle;
+
+#back3big {
+	display: none;
 }
-.clickable-image svg #map-button text {
-	font-size: 15px;
-	text-anchor: end;
+#texthide1 {
+	display: none;
+}
+#texthide2 {
+	display: none;
+}
+
+@media screen and (min-width: 500px){
+	#app {
+		border-top: 0px;
+		width: 100%;
+		max-width: 600px;
+	}
+	main {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		border: 1px solid red;
+	}
+	.zoom {
+		width: 200px;
+	}
+	.zoom img {
+		width: 100%;
+	}
+#zoomfirst {
+	border-top: 4px solid black;
+	width: 90%;
+    }
+	
+	
+#firstExplain {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+#zoomback {
+	width: 90%;
+}
+#overviewExplain {
+	position: absolute;
+	top: -10px;
+	left: 20px;
+}
+#texthide1 {
+	display: block;
+	position: absolute;
+	top: 150px;
+	left: 20px;
+}
+#texthide2 {
+	display: block;
+	position: absolute;
+	top: 350px;
+	left: 20px;
+}
+#zoomthree {
+	display: none;
+}
+#back3small {
+	display: none;
+}
+#back3big {
+	display: block;
+}
+#zoomfour, #zoomfive, #zoomsix {
+	width: 30%;
+}
+#zoomfive h1, #zoomsix h1{
+	color: white;
+}
+#zoomfour h1 {
+	position: relative;
+	width: 300px;
+	z-index: 5;
+}
+
 }
