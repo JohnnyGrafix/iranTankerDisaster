@@ -34,7 +34,7 @@
                     <p class="explain" id="firstExplain">{{ story.firstLegend }}</p>
 					<p class="small">{{ story.firstLegend2 }}</p>
 					<svg id="mefirst" preserveAspectRatio="xMaxYMid" viewBox="0 0 610 420">
-                        <g transform="translate(560,320)" v-on:click="moveTo('back')">
+                        <g id="forward1" transform="translate(560,320)" v-on:click="moveTo('back')">
                         <circle class="cls-2" cx="13.12" cy="13.12" r="35"/><polyline class="cls-3" points="4.02 -5.62 30.52 13.12 4.02 30.61"/>
 						</g>
                     </svg>
@@ -99,10 +99,10 @@
                     <p class="legend1" id="fourExplain">{{ story.fourLegend }}</p>
 					<p class="explain" id="fourExplain2">{{ story.fourLegend2 }}</p>
 						<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 610 420">
-                        <g transform="translate(560,320)" v-on:click="moveTo('five')">
+                        <g id="forward4" transform="translate(560,320)" v-on:click="moveTo('five')">
                         <circle class="cls-2" cx="13.12" cy="13.12" r="35"/><polyline class="cls-3" points="4.02 -5.62 30.52 13.12 4.02 30.61"/>   
                         </g>
-						<g transform="translate(25,320)" v-on:click="moveTo('three')">
+						<g id="back4" transform="translate(25,320)" v-on:click="moveTo('three')">
                         <circle class="cls-2" cx="13.12" cy="13.12" r="35"/><polyline class="cls-3" points="30.02 -5.62 0.52 13.12 30.02 30.61"/>   
                         </g>
                     </svg>
@@ -118,10 +118,10 @@
                     <p class="legend1" id="fiveExplain">{{ story.fiveLegend }}</p>
 					<p class="explain" id="fiveExplain2">{{ story.fiveLegend2 }}</p>
 						<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 610 420">
-                        <g transform="translate(560,320)" v-on:click="moveTo('six')">
+                        <g id="forward5" transform="translate(560,320)" v-on:click="moveTo('six')">
                         <circle class="cls-2" cx="13.12" cy="13.12" r="35"/><polyline class="cls-3" points="4.02 -5.62 30.52 13.12 4.02 30.61"/>   
                         </g>
-						<g transform="translate(25,320)" v-on:click="moveTo('four')">
+						<g id="back5" transform="translate(25,320)" v-on:click="moveTo('four')">
                         <circle class="cls-2" cx="13.12" cy="13.12" r="35"/><polyline class="cls-3" points="30.02 -5.62 0.52 13.12 30.02 30.61"/>   
                         </g>
                     </svg>
@@ -137,10 +137,10 @@
                     <p class="legend1" id="sixExplain">{{ story.sixLegend }}</p>
 					<p class="explain" id="sixExplain2">{{ story.sixLegend2 }}</p>
 						<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 610 420">
-                        <g transform="translate(560,320)" v-on:click="moveTo('seven')">
+                        <g id="forward6" transform="translate(560,320)" v-on:click="moveTo('seven')">
                         <circle class="cls-2" cx="13.12" cy="13.12" r="35"/><polyline class="cls-3" points="4.02 -5.62 30.52 13.12 4.02 30.61"/>   
                         </g>
-						<g transform="translate(25,320)" v-on:click="moveTo('five')">
+						<g id="back6" transform="translate(25,320)" v-on:click="moveTo('five')">
                         <circle class="cls-2" cx="13.12" cy="13.12" r="35"/><polyline class="cls-3" points="30.02 -5.62 0.52 13.12 30.02 30.61"/>   
                         </g>
                     </svg>
@@ -154,12 +154,12 @@
                         <div class="clickable-image">
                         <img :src="'assets/'+story.seven">
                     <p class="legend1" id="sevenExplain">{{ story.sevenLegend }}</p>
-					<p class="explain" id="sixExplain2">{{ story.sevenLegend2 }}</p>
+					<p class="explain" id="sevenExplain2">{{ story.sevenLegend2 }}</p>
 						<svg preserveAspectRatio="xMaxYMid" viewBox="0 0 610 420">
                         <g class="lastforward" transform="translate(560,320)" v-on:click="moveTo('seven')">
                         <circle class="cls-2" cx="13.12" cy="13.12" r="35"/><polyline class="cls-3" points="4.02 -5.62 30.52 13.12 4.02 30.61"/>   
                         </g>
-						<g transform="translate(25,320)" v-on:click="moveTo('six')">
+						<g id="back7" transform="translate(25,320)" v-on:click="moveTo('six')">
                         <circle class="cls-2" cx="13.12" cy="13.12" r="35"/><polyline class="cls-3" points="30.02 -5.62 0.52 13.12 30.02 30.61"/>   
                         </g>
                     </svg>

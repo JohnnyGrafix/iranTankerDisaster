@@ -118,13 +118,15 @@ footer {
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
-		border: 1px solid red;
 	}
 	.zoom {
 		width: 200px;
 	}
 	.zoom img {
 		width: 100%;
+	}
+	#forward1 {
+		
 	}
 #zoomfirst {
 	border-top: 4px solid black;
@@ -177,5 +179,60 @@ footer {
 	width: 300px;
 	z-index: 5;
 }
-
+#sixExplain, #fiveExplain, #fourExplain {
+	top: 200px;
+	padding: 2px 4px;
+	background-color: rgba(34, 49, 56, 0.9);
+}
+#fourExplain2 {
+	position: absolute;
+	top: 280px;
+	font-size: 1.7rem;
+	line-height: 18px;
+	font-weight: bold;
+	padding: 2px 4px;
+	margin: 0px 8px;
+}
+#sixExplain2 {
+	position: absolute;
+	top: 340px;
+	font-size: 1.7rem;
+	line-height: 18px;
+	font-weight: bold;
+	padding: 2px 4px;
+	margin: 0px 8px;
+}
+#fiveExplain2 {
+	position: absolute;
+	top: 300px;
+	font-size: 1.7rem;
+	line-height: 18px;
+	font-weight: bold;
+	padding: 2px 4px;
+	margin: 0px 8px;
+}
+#forward4, #back5,  #forward5, #back6 {
+	display: none;
+}
+#zoomfive h3, #zoomfour h3, #zoomsix h3 {
+	display: none;
+}
+#zoomseven {
+	width: 90%;
+}
+#sevenExplain2 {
+	position: absolute;
+	width: 50%;
+	top: 400px;
+	color: #ffcb05;
+	font-size: 1.7rem;
+	line-height: 18px;
+	font-weight: bold;
+	padding: 2px 4px;
+	margin: 0px 8px;
+}
+footer {
+	max-width: 600px;
+	margin-top: 50px;
+}
 }
